@@ -1,35 +1,87 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import "./App.css";
+import logo from "./assets/Vector.png";
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
+  const [switch1, setSwitch1] = useState(false);
+  const [switch2, setSwitch2] = useState(false);
+  const [switch3, setSwitch3] = useState(false);
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <section>
+      <header>
+        <img src={logo} alt="" />
+        <h1>React Counter</h1>
+      </header>
+      <main>
+        <div className="button">
+          <div>
+            <button
+              className={switch1 === true ? "purple" : "white"}
+              onClick={() => {
+                setSwitch1(!switch1);
+              }}
+            >
+              ON
+            </button>
+            <button
+              className={switch1 === false ? "purple" : "white"}
+              onClick={() => {
+                setSwitch1(!switch1);
+              }}
+            >
+              OFF
+            </button>
+          </div>
+          <div>
+            <button
+              className={switch2 === true ? "purple" : "white"}
+              onClick={() => {
+                setSwitch2(!switch2);
+              }}
+            >
+              ON
+            </button>
+            <button
+              className={switch2 === false ? "purple" : "white"}
+              onClick={() => {
+                setSwitch2(!switch2);
+              }}
+            >
+              OFF
+            </button>
+          </div>
+          <div>
+            <button
+              className={switch3 === true ? "purple" : "white"}
+              onClick={() => {
+                setSwitch3(!switch3);
+              }}
+            >
+              ON
+            </button>
+            <button
+              className={switch3 === false ? "purple" : "white"}
+              onClick={() => {
+                setSwitch3(!switch3);
+              }}
+            >
+              OFF
+            </button>
+          </div>
+        </div>
+        <div className="lanch">
+          <button className={switch1 && switch2 && switch3 ? "green" : "red"}>
+            <p>{switch1 && switch2 && switch3 ? "GO !" : "NO WAY !"}</p>
+          </button>
+        </div>
+      </main>
 
-export default App
+      <footer>
+        <p>Made with React at Le Reacteur by Anat</p>
+      </footer>
+    </section>
+  );
+};
+
+export default App;
