@@ -1,42 +1,82 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* =========GENERAL======== */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+h1 {
+  font-size: 48px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* =========HEADER======== */
+
+header {
+  height: 20vh;
+  padding: 0 40px;
+  border-bottom: 1px solid #e5e5e5;
+  display: flex;
+  gap: 50px;
+  align-items: center;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* =========COLOR======== */
+
+.purple {
+  background-color: #5c48d3;
+}
+.white {
+  background-color: white;
+}
+.red {
+  background-color: #d34848;
+}
+.green {
+  background-color: #46ac4a;
+}
+/* =========MAIN======== */
+main {
+  /* border: coral 10px solid; */
+  display: flex;
+}
+/* =========BUTTON======== */
+.button {
+  width: 49vw;
+  /* border: red 1px solid; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.button button {
+  margin: 50px;
+  border: #908f8f solid 1px;
+  width: 120px;
+  height: 70px;
+  border-radius: 6px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* =========LANCH======== */
+.lanch {
+  width: 49vw;
+  /* border: orange 1px solid; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-.card {
-  padding: 2em;
+.lanch button {
+  width: 250px;
+  height: 150px;
+  border-radius: 6px;
+  border: none;
 }
+.lanch p {
+  font-size: 36px;
+}
+/* =========FOOTER======== */
 
-.read-the-docs {
-  color: #888;
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
 }
