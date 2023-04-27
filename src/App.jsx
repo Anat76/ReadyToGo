@@ -72,7 +72,7 @@ const App = () => {
         </div>
         <div className="lanch">
           <button className={switch1 && switch2 && switch3 ? "green" : "red"}>
-            <p>{switch1 && switch2 && switch3 ? "GO !" : "NO WAY !"}</p>
+            <p>{switch1 && switch2 && switch3 ? "Go !" : "NO WAY !"}</p>
           </button>
         </div>
       </main>
