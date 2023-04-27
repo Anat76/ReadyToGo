@@ -23,6 +23,7 @@ header {
 
 .purple {
   background-color: #5c48d3;
+  color: white;
 }
 .white {
   background-color: white;
@@ -37,7 +38,9 @@ header {
 main {
   /* border: coral 10px solid; */
   display: flex;
+  height: 70vh;
 }
+
 /* =========BUTTON======== */
 .button {
   width: 49vw;
@@ -48,11 +51,12 @@ main {
   align-items: center;
 }
 .button button {
-  margin: 50px;
+  margin: 25px;
   border: #908f8f solid 1px;
   width: 120px;
   height: 70px;
   border-radius: 6px;
+  font-size: 30px;
 }
 
 /* =========LANCH======== */
@@ -71,6 +75,7 @@ main {
 }
 .lanch p {
   font-size: 36px;
+  color: white;
 }
 /* =========FOOTER======== */
 
@@ -78,5 +83,5 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 20vh;
+  height: 10vh;
 }
